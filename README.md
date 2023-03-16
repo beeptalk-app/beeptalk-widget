@@ -23,7 +23,7 @@ To include Beeptalk widget on your page, you need to include this script at the 
 You can pass options to beeptalkInit() function to use some extra features:
 
 ```js
-  beeptalkInit({<options>});
+  beeptalkInit({<<options>>});
 ```
 
 | Parameter | Type     | Required      | Description                |
