@@ -14,8 +14,7 @@ const beeptalkInit = (options = {}) =>{
   // create a link element for the stylesheet
   let link = document.createElement('link');
   link.rel = 'stylesheet';
-  link.crossorigin = '';
-  link.href = 'https://github.com/beeptalk-app/chat-widget/blob/main/style.css';
+  link.href = 'https://s3.amazonaws.com/appforest_uf/f1678985071292x522265031459425700/style.css';
   document.head.appendChild(link);
 
   // create the chat icon div element
@@ -25,8 +24,7 @@ const beeptalkInit = (options = {}) =>{
 
   // create the image element and set its attributes
   const img = document.createElement('img');
-  img.crossorigin = '';
-  img.src = 'https://github.com/beeptalk-app/chat-widget/blob/main/logo.webp';
+  img.src = 'https://s3.amazonaws.com/appforest_uf/f1678985116382x448650645733135400/logo.webp';
   img.width = '35';
   img.height = '35';
 
