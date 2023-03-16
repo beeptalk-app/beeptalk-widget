@@ -24,6 +24,7 @@ You can pass options to beeptalkInit() function to use some extra features:
 
 ```js
   beeptalkInit({
+    id
     uuid
     path
     agent
