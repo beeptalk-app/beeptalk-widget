@@ -34,7 +34,7 @@ const beeptalkInit = (options = {}) =>{
   // create the chat iframe element and set its attributes
   const chatIframe = document.createElement('iframe');
   chatIframe.classList.add('chat-iframe');
-  chatIframe.setAttribute('data-src', 'https://example.com');
+  chatIframe.setAttribute('data-src', 'https://dashboard.beeptalk.app/' + (versionTest?'version-test/':'') + 'widget' + paramsString);
   chatIframe.style.display = 'none';
 
   const chatClose = document.createElement('div');
