@@ -2,7 +2,7 @@
 # Beeptalk Widget
 
 [![GPLv3 License](https://img.shields.io/badge/License-GPL%20v3-yellow.svg)](https://opensource.org/licenses/) 
-[![GitHub release](https://img.shields.io/badge/release-v1.0.0-green)](https://github.com/beeptalk-app/chat-embedder/releases)
+[![GitHub release](https://img.shields.io/badge/release-v1.1.0-green)](https://github.com/beeptalk-app/chat-embedder/releases)
 
 
 Official [Beeptalk](https://beeptalk.app) chat widget.
@@ -13,7 +13,7 @@ Official [Beeptalk](https://beeptalk.app) chat widget.
 To include Beeptalk widget on your page, you need to include this script at the end of your `<body>`:
 
 ```html
-<script src="https://cdn.jsdelivr.net/gh/beeptalk-app/beeptalk-widget@latest/index.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/beeptalk-app/beeptalk-widget@1.1.0/index.min.js"></script>
 <script type="text/javascript">beeptalkInit({id: 'YOUR_PROJECT_ID'});</script>
 ```
 
