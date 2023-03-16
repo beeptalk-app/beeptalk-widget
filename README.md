@@ -35,6 +35,6 @@ You can pass options to beeptalkInit() function to use some extra features:
 | `id` | `string` | **Yes** | Beeptalk project ID |
 | `uuid` | `string` | No |  User unique ID |
 | `path` | `string` | No |  The path of the page (without the base url), eg. "/home" |
-| `agent` | `SHA1 hash` | No |  The path of the page (without the base url), eg. "/home" |
+| `agent` | `SHA1 hash` | No |  The Beeptalk user (must be a member of your project) email to assign this chat to, encrypted as SHA1 hash.  |
 
 
