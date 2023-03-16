@@ -22,12 +22,12 @@ To include Beeptalk widget on your page, you need to include this script at the 
 
 You can pass options to beeptalkInit() function to use some extra features:
 
-```ts
-  beeptalkInit(options: {
-    id: string;
-    uuid: string;
-    path: string;
-    agent: string;
+```js
+  beeptalkInit({
+    id
+    uuid
+    path
+    agent
   });
 ```
 
