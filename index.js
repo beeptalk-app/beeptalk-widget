@@ -14,7 +14,7 @@ const beeptalkInit = (options = {}) =>{
   // create a link element for the stylesheet
   let link = document.createElement('link');
   link.rel = 'stylesheet';
-  link.href = 'https://s3.amazonaws.com/appforest_uf/f1678985071292x522265031459425700/style.css';
+  link.href = 'beeptalk-widget.css';
   document.head.appendChild(link);
 
   // create the chat icon div element
@@ -24,7 +24,7 @@ const beeptalkInit = (options = {}) =>{
 
   // create the image element and set its attributes
   const img = document.createElement('img');
-  img.src = 'https://s3.amazonaws.com/appforest_uf/f1678985116382x448650645733135400/logo.webp';
+  img.src = 'https://s3.amazonaws.com/appforest_uf/f1677517299982x687410003005625600/main.webp';
   img.width = '35';
   img.height = '35';
 
@@ -34,17 +34,32 @@ const beeptalkInit = (options = {}) =>{
   // create the chat iframe element and set its attributes
   const chatIframe = document.createElement('iframe');
   chatIframe.classList.add('chat-iframe');
-  chatIframe.setAttribute('data-src', 'https://dashboard.beeptalk.app/' + (versionTest?'version-test/':'') + 'widget' + paramsString);
+  chatIframe.setAttribute('data-src', 'https://example.com');
   chatIframe.style.display = 'none';
+
+  const chatClose = document.createElement('div');
+  chatClose.classList.add('chat-close-icon');
+  chatClose.style.display = 'none';
+  chatClose.style.cursor = 'pointer';
+
+  const closeImg = document.createElement('img');
+  closeImg.src = 'https://s3.amazonaws.com/appforest_uf/f1679008960535x752930425825623900/close.png'
+  closeImg.width = '15';
+  closeImg.height = '15';
+
+  chatClose.appendChild(closeImg);
+
 
   document.addEventListener('click', function(event) {
     if (!chatIframe.contains(event.target) && !chatIcon.contains(event.target)) {
       chatIframe.style.display = 'none';
+      chatClose.style.display = 'none';
     }
   });
 
   // append the chat icon div and chat iframe elements to the body of the page
   document.body.appendChild(chatIcon);
+  document.body.appendChild(chatClose);
   document.body.appendChild(chatIframe);
 
   // Set up an IntersectionObserver to detect when the iframe becomes visible
@@ -65,5 +80,6 @@ const beeptalkInit = (options = {}) =>{
   // Show/hide the iframe when the chat icon is clicked
   function showChat() {
     chatIframe.style.display = chatIframe.style.display === 'none' ? 'block' : 'none';
+    chatClose.style.display = chatClose.style.display === 'none' ? 'block' : 'none';
   }
 }
