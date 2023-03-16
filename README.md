@@ -5,7 +5,7 @@
 [![GitHub release](https://img.shields.io/badge/release-v0.0.1-orange)](https://github.com/beeptalk-app/chat-embedder/releases)
 
 
-A brief description of what this project does and who it's for
+Official [Beeptalk](https://beeptalk.app) chat widget.
 
 
 ### Deployment
