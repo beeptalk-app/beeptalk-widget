@@ -14,7 +14,7 @@ To include Beeptalk widget on your page, you need to include this script at the 
 
 ```html
 <script src="https://cdn.jsdelivr.net/gh/beeptalk-app/beeptalk-widget@latest/index.js"></script>
-<script type="text/javascript">beeptalkInit();</script>
+<script type="text/javascript">beeptalkInit({id: 'YOUR_PROJECT_ID'});</script>
 ```
 
 
@@ -32,7 +32,8 @@ You can pass options to beeptalkInit() function to use some extra features:
 
 | Parameter | Type     | Required      | Description                |
 | :-------- | :------- | :------------ | :------------------------- |
-| `uuid` | `string` | No |  User unique id |
+| `id` | `string` | **Yes** | Beeptalk project ID |
+| `uuid` | `string` | No |  User unique ID |
 | `path` | `string` | No |  The path of the page (without the base url), eg. "/home" |
 | `agent` | `SHA1 hash` | No |  The path of the page (without the base url), eg. "/home" |
 
