@@ -14,7 +14,7 @@ const beeptalkInit = (options = {}) =>{
   // create a link element for the stylesheet
   let link = document.createElement('link');
   link.rel = 'stylesheet';
-  link.href = 'beeptalk-widget.css';
+  link.href = 'https://s3.amazonaws.com/appforest_uf/f1679009733700x406315687872131900/style.css';
   document.head.appendChild(link);
 
   // create the chat icon div element
