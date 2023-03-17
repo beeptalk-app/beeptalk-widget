@@ -47,11 +47,6 @@
     height: 500px;
   }
 
-  @keyframes spin {
-    0% { transform: rotate(0deg); }
-    100% { transform: rotate(360deg); }
-  }
-
 @media (max-width: 767px) {
 /* apply these styles for mobile devices with screen width up to 767 pixels */
   .chat-iframe {
@@ -60,8 +55,8 @@
     left: 0 !important;
     bottom: 0 !important;
     right: 0 !important;
-    width: 99.5% !important;
-    height: 99.5% !important;
+    width: calc(100% - 5px) !important;
+    height: calc(100% - 5px) !important;
     border-style: none !important;
     border-roundness: 0 !important;
     z-index: 10000 !important;
