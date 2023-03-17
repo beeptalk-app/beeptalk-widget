@@ -16,6 +16,16 @@
   padding-top: 2px !important;
 }
 
+.chat-close-icon{
+  position: absolute;
+  width: 0px;
+  height: 0px;
+}
+.chat-close-icon img{
+  width: 0px;
+  height: 0px;
+}
+
 /* Styles for the chat iframe */
 .chat-iframe {
   position: fixed !important;
@@ -58,10 +68,14 @@
   }
   .chat-close-icon{
     position: absolute !important;
-    width: 10px !important;
-    height: 10px !important;
+    width: 15px !important;
+    height: 15px !important;
     margin-left: calc(100% - 40px) !important;
     top: 20px !important;
     z-index: 10001 !important;
+  }
+  .chat-close-icon img{
+    width: 15px !important;
+    height: 15px !important;
   }
 }
