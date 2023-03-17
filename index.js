@@ -10,12 +10,6 @@ const beeptalkInit = (options = {}) =>{
   }
   
   const versionTest = options?.versionTest;
-  
-  // create a link element for the stylesheet
-  let link = document.createElement('link');
-  link.rel = 'stylesheet';
-  link.href = 'https://s3.amazonaws.com/appforest_uf/f1679009733700x406315687872131900/style.css';
-  document.head.appendChild(link);
 
   // create the chat icon div element
   const chatIcon = document.createElement('div');
