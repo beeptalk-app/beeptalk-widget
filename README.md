@@ -2,7 +2,7 @@
 # Beeptalk Widget
 
 [![GPLv3 License](https://img.shields.io/badge/License-GPL%20v3-yellow.svg)](https://opensource.org/licenses/) 
-[![GitHub release](https://img.shields.io/badge/release-v1.1.1-green)](https://github.com/beeptalk-app/chat-embedder/releases)
+[![GitHub release](https://img.shields.io/badge/release-v1.1.2-green)](https://github.com/beeptalk-app/chat-embedder/releases)
 
 
 Official [Beeptalk](https://beeptalk.app) chat widget.
