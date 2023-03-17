@@ -14,7 +14,7 @@ To include Beeptalk widget on your page, you need to include this script inside 
 
 ```html
 <script src="https://cdn.jsdelivr.net/gh/beeptalk-app/beeptalk-widget@1.1.1/index.min.js"></script>
-<script src="https://cdn.jsdelivr.net/gh/beeptalk-app/beeptalk-widget@1.1.1/style.min.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/beeptalk-app/beeptalk-widget@1.1.1/style.min.css"></script>
 <script type="text/javascript">beeptalkInit({id: 'YOUR_PROJECT_ID'});</script>
 ```
 
