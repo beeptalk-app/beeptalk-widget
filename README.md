@@ -26,6 +26,7 @@ You can pass options to beeptalkInit() function to use some extra features:
 ```js
   beeptalkInit({
     id
+    suid
     uuid
     path
     agent
@@ -35,6 +36,7 @@ You can pass options to beeptalkInit() function to use some extra features:
 | Parameter | Type     | Required      | Description                |
 | :-------- | :--------- | :------------ | :----------------------- |
 | `id` | `string` | **Yes** | Beeptalk project ID |
+| `suid` | `string` | No |  Session unique ID, this is needed to preserve a chat between sessions. |
 | `uuid` | `string` | No |  User unique ID (this will be recorderd on Beeptalk, and it might be useful for analytics) |
 | `path` | `string` | No |  The path of the page (without the base url), eg. "/home" (this will be recorderd on Beeptalk, and it might be useful for analytics) |
 | `agent` | `SHA1` | No |  The Beeptalk user (must be added to your project) email to assign to the chat, the email must be SHA1 hash encrypted. This is automatically handled if no agent is provided. |
