@@ -40,7 +40,7 @@ const beeptalkInit = (options = {}) =>{
   // create the chat iframe element and set its attributes
   const chatIframe = document.createElement('iframe');
   chatIframe.classList.add('chat-iframe');
-  chatIframe.setAttribute('data-src', 'https://dashboard.beeptalk.app/' + (versionTest?'version-test/':'') + 'widget' + paramsString);
+  chatIframe.setAttribute('src', 'https://dashboard.beeptalk.app/' + (versionTest?'version-test/':'') + 'widget' + paramsString);
   chatIframe.style.display = 'none';
 
   const chatClose = document.createElement('div');
@@ -67,21 +67,6 @@ const beeptalkInit = (options = {}) =>{
   document.body.appendChild(chatIcon);
   document.body.appendChild(chatClose);
   document.body.appendChild(chatIframe);
-
-  // Set up an IntersectionObserver to detect when the iframe becomes visible
-  let observer = new IntersectionObserver(function(entries) {
-    entries.forEach(function(entry) {
-      if (entry.isIntersecting) {
-        // Load the iframe content if it hasn't been loaded yet
-        if (!chatIframe.getAttribute('src')) {
-          chatIframe.setAttribute('src', chatIframe.getAttribute('data-src'));
-        }
-      }
-    });
-  });
-
-  // Observe the iframe element
-  observer.observe(chatIframe);
 
   // Show/hide the iframe when the chat icon is clicked
   function showChat() {
