@@ -4,12 +4,22 @@ const beeptalkInit = (options = {}) =>{
   
   if(Object.keys(options).length === 0){
     paramsString = Object.entries(options)
-      .map(([key, value]) => `${encodeURIComponent(key)}=${encodeURIComponent(value)}`)
+      .map(([key, value]) => {
+        if(key!='versionTest'&&key!='darkIcon'&&key!='primaryColor') return `${encodeURIComponent(key)}=${encodeURIComponent(value)}`
+      })
       .join('&');
     paramsString = '?' + paramsString;
   }
   
   const versionTest = options?.versionTest;
+  const darkIcon = options?.darkIcon;
+  const primaryColor = options?.primaryColor;
+
+  const styleLink = document.createElement('link');
+  styleLink.rel = 'stylesheet';
+  styleLink.type = 'text/css';
+  styleLink.href = 'https://cdn.jsdelivr.net/gh/beeptalk-app/beeptalk-widget@latest/style.min.css';
+  document.head.appendChild(styleLink);
 
   // create the chat icon div element
   const chatIcon = document.createElement('div');
@@ -18,9 +28,10 @@ const beeptalkInit = (options = {}) =>{
 
   // create the image element and set its attributes
   const img = document.createElement('img');
-  img.src = 'https://s3.amazonaws.com/appforest_uf/f1677517299982x687410003005625600/main.webp';
-  img.width = '35';
-  img.height = '35';
+  if(!darkIcon) img.src = 'https://s3.amazonaws.com/appforest_uf/f1679147115457x740024418331006500/white-chat-bubble.png';
+  if(darkIcon) img.src = 'https://s3.amazonaws.com/appforest_uf/f1679147275642x724839114675521300/black-chat-bubble.png';
+  img.width = 28;
+  img.height = 28;
 
   // append the image element to the chat icon div element
   chatIcon.appendChild(img);
@@ -28,6 +39,7 @@ const beeptalkInit = (options = {}) =>{
   // create the chat iframe element and set its attributes
   const chatIframe = document.createElement('iframe');
   chatIframe.classList.add('chat-iframe');
+  chatIframe.style.backgroundColor = primaryColor || '#0384C6';
   chatIframe.setAttribute('data-src', 'https://dashboard.beeptalk.app/' + (versionTest?'version-test/':'') + 'widget' + paramsString);
   chatIframe.style.display = 'none';
 
@@ -38,8 +50,8 @@ const beeptalkInit = (options = {}) =>{
 
   const closeImg = document.createElement('img');
   closeImg.src = 'https://s3.amazonaws.com/appforest_uf/f1679008960535x752930425825623900/close.png'
-  closeImg.width = '15';
-  closeImg.height = '15';
+  closeImg.width = 15;
+  closeImg.height = 15;
 
   chatClose.appendChild(closeImg);
 
