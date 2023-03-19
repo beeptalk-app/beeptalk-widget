@@ -10,11 +10,10 @@ Official [Beeptalk](https://beeptalk.app) chat widget.
 
 ### Deployment
 
-To include Beeptalk widget on your page, you need to include this script inside `<head>`:
+To include Beeptalk widget on your page, you need to include this script at the end of the `<body>`:
 
 ```html
 <script src="https://cdn.jsdelivr.net/gh/beeptalk-app/beeptalk-widget@latest/index.min.js"></script>
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/beeptalk-app/beeptalk-widget@latest/style.min.css"></link>
 <script type="text/javascript">beeptalkInit({id: 'YOUR_PROJECT_ID'});</script>
 ```
 
@@ -28,6 +27,8 @@ You can pass options to beeptalkInit() function to use some extra features:
     id
     suid
     uuid
+    darkIcon
+    primaryColor
     path
     agent
   });
@@ -38,6 +39,8 @@ You can pass options to beeptalkInit() function to use some extra features:
 | `id` | `string` | **Yes** | Beeptalk project ID |
 | `suid` | `string` | No |  Session unique ID, this is needed to preserve a chat between sessions. |
 | `uuid` | `string` | No |  User unique ID (this will be recorderd on Beeptalk, and it might be useful for analytics) |
+| `darkIcon` | `boolean` | No |  If `true`, the icon of the widget will be dark instead of white, default to `false`. |
+| `primaryColor` | `string` | No |  The background color (hexadecimal) of the widget, defaults to the primary color of Beeptalk. |
 | `path` | `string` | No |  The path of the page (without the base url), eg. "/home" (this will be recorderd on Beeptalk, and it might be useful for analytics) |
 | `agent` | `SHA1` | No |  The Beeptalk user (must be added to your project) email to assign to the chat, the email must be SHA1 hash encrypted. This is automatically handled if no agent is provided. |
 
