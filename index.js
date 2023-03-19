@@ -24,6 +24,7 @@ const beeptalkInit = (options = {}) =>{
   // create the chat icon div element
   const chatIcon = document.createElement('div');
   chatIcon.classList.add('chat-icon');
+  chatIcon.style.backgroundColor = primaryColor || '#0384C6';
   chatIcon.onclick = showChat; // attach the onclick event to the function showChat
 
   // create the image element and set its attributes
@@ -39,7 +40,6 @@ const beeptalkInit = (options = {}) =>{
   // create the chat iframe element and set its attributes
   const chatIframe = document.createElement('iframe');
   chatIframe.classList.add('chat-iframe');
-  chatIframe.style.backgroundColor = primaryColor || '#0384C6';
   chatIframe.setAttribute('data-src', 'https://dashboard.beeptalk.app/' + (versionTest?'version-test/':'') + 'widget' + paramsString);
   chatIframe.style.display = 'none';
 
