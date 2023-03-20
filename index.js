@@ -20,7 +20,7 @@ const beeptalkInit = (options = {}) =>{
   const styleLink = document.createElement('link');
   styleLink.rel = 'stylesheet';
   styleLink.type = 'text/css';
-  styleLink.href = 'https://cdn.jsdelivr.net/gh/beeptalk-app/beeptalk-widget@1.2.2/style.min.css';
+  styleLink.href = 'https://cdn.jsdelivr.net/gh/beeptalk-app/beeptalk-widget@1.2.3/style.min.css';
   document.head.appendChild(styleLink);
 
   // create the chat icon div element
