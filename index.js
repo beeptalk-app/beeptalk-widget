@@ -2,13 +2,15 @@ const beeptalkInit = (options = {}) =>{
   
   let paramsString = '';
   
-  if(Object.keys(options).length === 0){
-    paramsString = Object.entries(options)
-      .map(([key, value]) => {
-        if(key!='versionTest'&&key!='darkIcon'&&key!='primaryColor') return `${encodeURIComponent(key)}=${encodeURIComponent(value)}`
-      })
-      .join('&');
-    paramsString = '?' + paramsString;
+  if(Object.keys(options).length > 0){
+    let paramsArray = [];
+    for (const key in options) {
+      if (Object.hasOwnProperty.call(options, key)) {
+        const value = options[key];
+        if(key!='versionTest'&&key!='darkIcon'&&key!='primaryColor') paramsArray = [...paramsArray, `${encodeURIComponent(key)}=${encodeURIComponent(value)}`];
+      }
+    }
+    paramsString = '?'+paramsArray.join('&');
   }
   
   const versionTest = options?.versionTest;
