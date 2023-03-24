@@ -37,7 +37,7 @@ You can pass options to beeptalkInit() function to use some extra features:
 | Parameter | Type     | Required      | Description                |
 | :-------- | :--------- | :------------ | :----------------------- |
 | `id` | `string` | **Yes** | Beeptalk project ID |
-| `suid` | `string` | No |  Session unique ID, this is needed to preserve a chat between sessions. |
+| `suid` | `string` | No |  Session unique ID, this is needed to preserve a chat between sessions. This is automatically handled if not set. |
 | `uuid` | `string` | No |  User unique ID (this will be recorderd on Beeptalk, and it might be useful for analytics) |
 | `darkIcon` | `boolean` | No |  If `true`, the icon of the widget will be dark instead of white, default to `false`. |
 | `primaryColor` | `string` | No |  The background color (hexadecimal) of the widget, defaults to the primary color of Beeptalk. |
