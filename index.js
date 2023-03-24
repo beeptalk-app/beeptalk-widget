@@ -1,5 +1,15 @@
 const beeptalkInit = (options = {}) =>{
   
+  const sessionStorageSuidKey = "-beeptalk-suid-"+options?.id;
+  
+  let _suid = sessionStorage.getItem(sessionStorageSuidKey);
+  if(!_suid) {
+    _suid = Date.now().toString()
+    sessionStorage.setItem(sessionStorageSuidKey, _suid);
+  }
+  
+  options['suid'] = _suid;
+  
   let paramsString = '';
   
   if(Object.keys(options).length > 0){
