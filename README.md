@@ -3,7 +3,8 @@
 
 [![GPLv3 License](https://img.shields.io/badge/License-GPL%20v3-yellow.svg)](https://opensource.org/licenses/) 
 ![GitHub release (latest by date)](https://img.shields.io/github/v/release/beeptalk-app/beeptalk-widget)
-![GitHub file size in bytes](https://img.shields.io/github/size/beeptalk-app/beeptalk-widget/index.js?label=js%20size)
+![Website](https://img.shields.io/website?down_color=red&down_message=down&label=beeptalk&up_message=online&url=https%3A%2F%2Fdashboard.beeptalk.app%2F)
+
 ![GitHub file size in bytes](https://img.shields.io/github/size/beeptalk-app/beeptalk-widget/style.css?color=%23fafafa&label=css%20size)
 ![GitHub file size in bytes](https://img.shields.io/github/size/beeptalk-app/beeptalk-widget/index.js?color=%23fafafa&label=js%20size)
 
