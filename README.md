@@ -20,8 +20,8 @@ To include Beeptalk widget on your page, you need to include this script at the 
 <script src="https://cdn.jsdelivr.net/gh/beeptalk-app/beeptalk-widget@latest/index.min.js"></script>
 <script type="text/javascript">beeptalkInit({id: 'YOUR_PROJECT_ID'});</script>
 ```
-[![GitHub file size in bytes](https://img.shields.io/github/size/beeptalk-app/beeptalk-widget/index.js?color=%23fafafa&label=js)](https://github.com/beeptalk-app/beeptalk-widget/index.js)
-[![GitHub file size in bytes](https://img.shields.io/github/size/beeptalk-app/beeptalk-widget/style.css?color=%23fafafa&label=css)](https://github.com/beeptalk-app/beeptalk-widget/style.css)
+[![GitHub file size in bytes](https://img.shields.io/github/size/beeptalk-app/beeptalk-widget/index.js?color=%23fafafa&label=js)](https://github.com/beeptalk-app/beeptalk-widget/blob/main/index.js)
+[![GitHub file size in bytes](https://img.shields.io/github/size/beeptalk-app/beeptalk-widget/style.css?color=%23fafafa&label=css)](https://github.com/beeptalk-app/beeptalk-widget/blob/main/style.css)
 
 ### Options documentation
 
