@@ -5,8 +5,6 @@
 ![GitHub release (latest by date)](https://img.shields.io/github/v/release/beeptalk-app/beeptalk-widget)
 ![Website](https://img.shields.io/website?down_color=red&down_message=down&label=beeptalk&up_message=online&url=https%3A%2F%2Fdashboard.beeptalk.app%2F)
 ![GitHub issues](https://img.shields.io/github/issues/beeptalk-app/beeptalk-widget)
-![GitHub file size in bytes](https://img.shields.io/github/size/beeptalk-app/beeptalk-widget/style.css?color=%23fafafa&label=css%20size)
-![GitHub file size in bytes](https://img.shields.io/github/size/beeptalk-app/beeptalk-widget/index.js?color=%23fafafa&label=js%20size)
 
 
 Official [Beeptalk](https://beeptalk.app) chat widget.
@@ -20,7 +18,8 @@ To include Beeptalk widget on your page, you need to include this script at the 
 <script src="https://cdn.jsdelivr.net/gh/beeptalk-app/beeptalk-widget@latest/index.min.js"></script>
 <script type="text/javascript">beeptalkInit({id: 'YOUR_PROJECT_ID'});</script>
 ```
-
+![GitHub file size in bytes](https://img.shields.io/github/size/beeptalk-app/beeptalk-widget/index.js?color=%23fafafa&label=js)
+![GitHub file size in bytes](https://img.shields.io/github/size/beeptalk-app/beeptalk-widget/style.css?color=%23fafafa&label=css)
 
 ### Options documentation
 
