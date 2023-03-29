@@ -4,7 +4,7 @@
 [![GPLv3 License](https://img.shields.io/badge/License-GPL%20v3-yellow.svg)](https://opensource.org/licenses/) 
 [![GitHub release (latest by date)](https://img.shields.io/github/v/release/beeptalk-app/beeptalk-widget)](#)
 [![Website](https://img.shields.io/website?down_color=red&down_message=down&label=beeptalk&up_message=online&url=https%3A%2F%2Fdashboard.beeptalk.app%2F)](https://beeptalk.app/)
-[![GitHub issues](https://img.shields.io/github/issues/beeptalk-app/beeptalk-widget)](#)
+[![GitHub issues](https://img.shields.io/github/issues/beeptalk-app/beeptalk-widget)](https://github.com/beeptalk-app/beeptalk-widget/issues)
 
 [![Twitter Follow](https://img.shields.io/twitter/follow/beeptalk_app?style=social)](https://twitter.com/beeptalk_app)
 
@@ -20,8 +20,8 @@ To include Beeptalk widget on your page, you need to include this script at the 
 <script src="https://cdn.jsdelivr.net/gh/beeptalk-app/beeptalk-widget@latest/index.min.js"></script>
 <script type="text/javascript">beeptalkInit({id: 'YOUR_PROJECT_ID'});</script>
 ```
-![GitHub file size in bytes](https://img.shields.io/github/size/beeptalk-app/beeptalk-widget/index.js?color=%23fafafa&label=js)
-![GitHub file size in bytes](https://img.shields.io/github/size/beeptalk-app/beeptalk-widget/style.css?color=%23fafafa&label=css)
+[![GitHub file size in bytes](https://img.shields.io/github/size/beeptalk-app/beeptalk-widget/index.js?color=%23fafafa&label=js)](#)
+[![GitHub file size in bytes](https://img.shields.io/github/size/beeptalk-app/beeptalk-widget/style.css?color=%23fafafa&label=css)](#)
 
 ### Options documentation
 
