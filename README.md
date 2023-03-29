@@ -6,7 +6,7 @@
 ![Website](https://img.shields.io/website?down_color=red&down_message=down&label=beeptalk&up_message=online&url=https%3A%2F%2Fdashboard.beeptalk.app%2F)
 ![GitHub issues](https://img.shields.io/github/issues/beeptalk-app/beeptalk-widget)
 
-![Twitter Follow](https://img.shields.io/twitter/follow/beeptalk_app?style=social)
+[![Twitter Follow](https://img.shields.io/twitter/follow/beeptalk_app?style=social)](https://twitter.com/beeptalk_app)
 
 
 Official [Beeptalk](https://beeptalk.app) chat widget.
