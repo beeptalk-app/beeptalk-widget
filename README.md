@@ -13,7 +13,7 @@ Official [Beeptalk](https://beeptalk.app) chat widget.
 To include Beeptalk widget on your page, you need to include this script at the end of the `<body>`:
 
 ```html
-<script src="https://cdn.jsdelivr.net/gh/beeptalk-app/beeptalk-widget@1.3.0/index.min.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/beeptalk-app/beeptalk-widget@latest/index.min.js"></script>
 <script type="text/javascript">beeptalkInit({id: 'YOUR_PROJECT_ID'});</script>
 ```
 
