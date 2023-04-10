@@ -32,6 +32,8 @@ You can pass options to beeptalkInit() function to use some extra features:
     id
     suid
     uuid
+    uname
+    extraData
     darkIcon
     primaryColor
     path
