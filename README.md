@@ -43,7 +43,9 @@ You can pass options to beeptalkInit() function to use some extra features:
 | :-------- | :--------- | :------------ | :----------------------- |
 | `id` | `string` | **Yes** | Beeptalk project ID |
 | `suid` | `string` | No |  Session unique ID, this is needed to preserve a chat between sessions. This is automatically handled if not set. |
-| `uuid` | `string` | No |  User unique ID (this will be recorderd on Beeptalk, and it might be useful for analytics) |
+| `uuid` | `string` | No |  User unique ID (this will be recorderd on Beeptalk, and it might be useful for analytics and user identification) |
+| `uname` | `string` | No |  User name in your app (this will be recorderd on Beeptalk, and it might be useful for analytics and user identification) |
+| `extraData` | `string` | No |  Extra custom data to be recorded on the Beeptalk chat (might be useful for analytics) |
 | `darkIcon` | `boolean` | No |  If `true`, the icon of the widget will be dark instead of white, default to `false`. |
 | `primaryColor` | `string` | No |  The background color (hexadecimal) of the widget, defaults to the primary color of Beeptalk. |
 | `path` | `string` | No |  The path of the page (without the base url), eg. "/home" (this will be recorderd on Beeptalk, and it might be useful for analytics) |
