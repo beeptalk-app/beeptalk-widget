@@ -11,7 +11,7 @@ const beeptalkInit = (options = {}) =>{
   options['suid'] = _suid;
   const domainName = window.location.hostname;
 
-  let paramsString = '?hostname=domainName';
+  let paramsString = '?hostname='+domainName;
   
   if(Object.keys(options).length > 0){
     let paramsArray = [];
