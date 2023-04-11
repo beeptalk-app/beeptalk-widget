@@ -21,7 +21,7 @@ const beeptalkInit = (options = {}) =>{
         if(key!='versionTest'&&key!='darkIcon'&&key!='primaryColor') paramsArray = [...paramsArray, `${encodeURIComponent(key)}=${encodeURIComponent(value)}`];
       }
     }
-    paramsString = '&'+paramsArray.join('&');
+    paramsString = paramsString+'&'+paramsArray.join('&');
   }
   
   const versionTest = options?.versionTest;
