@@ -1,5 +1,15 @@
-const beeptalkInit = (options = {}) =>{
+const beeptalkInit = async (options = {}) =>{
   
+  const projectId = options?.id;
+
+  if(!projectId) {
+    console.error("Missing project id.");
+    return;
+  }
+
+  const allowedParams = ["id","suid","uuid","uname","extraData","path","agent"];
+  const entity = (await (await fetch("https://dashboard.beeptalk.app/version-test/api/1.1/obj/entity/"+projectId)).json())?.response;
+
   const sessionStorageSuidKey = "-beeptalk-suid-"+options?.id;
   
   let _suid = options?.suid || sessionStorage.getItem(sessionStorageSuidKey);
@@ -18,15 +28,15 @@ const beeptalkInit = (options = {}) =>{
     for (const key in options) {
       if (Object.hasOwnProperty.call(options, key)) {
         const value = options[key];
-        if(key!='versionTest'&&key!='darkIcon'&&key!='primaryColor') paramsArray = [...paramsArray, `${encodeURIComponent(key)}=${encodeURIComponent(value)}`];
+        if(allowedParams.includes(key)) paramsArray = [...paramsArray, `${encodeURIComponent(key)}=${encodeURIComponent(value)}`];
       }
     }
     paramsString = paramsString+'&'+paramsArray.join('&');
   }
   
   const versionTest = options?.versionTest;
-  const darkIcon = options?.darkIcon;
-  const primaryColor = options?.primaryColor;
+  const darkIcon = entity?.darkWidgetIcon;
+  const primaryColor = entity?.widgetColor || "#0384C6";
 
   const styleLink = document.createElement('link');
   styleLink.rel = 'stylesheet';
