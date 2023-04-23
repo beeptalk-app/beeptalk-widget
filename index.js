@@ -72,7 +72,7 @@ const beeptalkInit = async (options = {}) =>{
   chatClose.style.cursor = 'pointer';
 
   const closeImg = document.createElement('img');
-  closeImg.src = 'https://s3.amazonaws.com/appforest_uf/f1679008960535x752930425825623900/close.png'
+  closeImg.src = 'https://akitainu-vgwmjxnowgoyjfte.cdn.bubble.io/f1682288588611x448320283172398900/close.png'
   closeImg.width = 15;
   closeImg.height = 15;
 
