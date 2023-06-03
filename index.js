@@ -8,7 +8,7 @@ const beeptalkInit = async (options = {}) =>{
   }
 
   const allowedParams = ["id","suid","uuid","uname","extraData","path","agent"];
-  const entity = (await (await fetch("https://dashboard.beeptalk.app/version-test/api/1.1/obj/entity/"+projectId)).json())?.response;
+  const entity = (await (await fetch("https://dashboard.beeptalk.app/api/1.1/obj/entity/"+projectId)).json())?.response;
 
   const sessionStorageSuidKey = "-beeptalk-suid-"+options?.id;
   
