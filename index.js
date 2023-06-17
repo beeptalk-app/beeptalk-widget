@@ -47,6 +47,7 @@ const beeptalkInit = async (options = {}) =>{
   // create the chat icon div element
   const chatIcon = document.createElement('div');
   chatIcon.classList.add('chat-icon');
+  chatIcon.classList.add('beeptalk-widget');
   chatIcon.style.backgroundColor = primaryColor || '#0384C6';
   chatIcon.onclick = showChat; // attach the onclick event to the function showChat
 
